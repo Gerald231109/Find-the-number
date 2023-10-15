@@ -1,0 +1,145 @@
+.game__start {
+    display: none;
+    justify-items: center;
+    cursor: pointer;
+    grid-row-gap: 3.5rem;
+    padding-top: 6rem;
+    padding-bottom: 3.5rem;
+    position: relative;
+}
+
+.start__reaction {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.reaction__true, .reaction__false {
+    font-size: 9rem;
+    display: none;
+    align-items: center;
+    justify-items: center;
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+    border-radius: 12rem;
+    top: 30%;
+    background-color: rgba(255, 255, 255, .8);
+    z-index: 1;
+    animation: increase forwards .3s;
+    pointer-events: none;
+}
+
+.reaction__false {
+    color: darkred;
+}
+
+.reaction__true {
+    color: limegreen;
+}
+
+.start__info {
+    display: grid;
+    width: 44.5rem;
+    grid-template-columns: repeat(4, 6.5rem);
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: .5rem 2rem;
+
+}
+
+.info__item {
+    display: grid;
+    justify-items: center;
+}
+
+.info__text {
+    font-size: .7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.info__value {
+    font-size: 1.2rem;
+    font-weight: 900;
+    display: grid;
+    grid-template-columns: repeat(6, min-content);
+    align-items: center;
+}
+
+.bonus-block {
+    display: grid;
+    grid-column-gap: .2rem;
+}
+
+.info__circle {
+    font-size: .7rem;
+    padding-top: .2rem;
+}
+
+.start__target {
+    color: #fff;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: max-content min-content;
+    justify-content: space-between;
+    justify-items: center;
+    width: 48.5rem;
+    align-items: center;
+    border-radius: 4px;
+    padding: 1.92rem 2.4rem;
+    box-shadow: 0 7px 35px 0 rgba(0, 0, 0, 0.3) ;
+}
+
+.start__text {
+    font-size: 1.84rem;
+}
+
+.start__number {
+    font-size: 5.04rem;
+}
+
+.start__grid {
+    display: grid;
+    width: 48.5rem;
+    height: 25.2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 8.3rem);
+    grid-gap: 2.5rem;
+    align-content: center;
+}
+
+.start__item {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 600;
+    max-height: 8.4rem;
+    transition: box-shadow .1s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.start__item:hover {
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.start__item-value {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+}

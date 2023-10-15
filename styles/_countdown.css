@@ -1,0 +1,18 @@
+.game__countdown {
+    display: none;
+    position: absolute;
+    top: 35%;
+    justify-self: center;
+    width: 10rem;
+    height: 10rem;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(233, 233, 233, .6);
+    border-radius: 10rem;
+}
+
+.countdown__text {
+    display: grid;
+    font-size: 6rem;
+    font-weight: 800;
+}

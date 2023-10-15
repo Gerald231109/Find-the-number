@@ -1,0 +1,32 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 73rem;
+    font-family: Montserrat;
+    display: grid;
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(171.8deg, rgb(5, 111, 146) 13.5%, rgb(6, 57, 84) 78.6%);
+;
+}
+
+a {
+    text-decoration: none;
+}
+
+.game {
+    display: grid;
+}

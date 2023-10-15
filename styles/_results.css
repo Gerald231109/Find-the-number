@@ -1,0 +1,72 @@
+.game__results {
+    display: none;
+    background-color: #fff;
+    justify-items: center;
+    align-items: center;
+    padding: 4.5rem 0 3.5rem 0;
+    grid-row-gap: 6rem;
+}
+
+.results__title {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(/svg/head__welcome.svg);
+    background-size: cover;
+    width: 63rem;
+    height: 12rem;
+    font-size: 3.68rem;
+    font-weight: 300;
+    color: #fff;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.results__body {
+    display: grid;
+    grid-row-gap: 1.5rem;
+}
+
+.results__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4rem;
+}
+
+.row__category {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgb(153, 153, 153);
+}
+
+.row__value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: rgb(63, 63, 63);
+    justify-self: end;
+}
+
+.neuron {
+    color: #6039aa;
+}
+
+.results__btn {
+    font-size: 1.8rem;
+    border: 1px solid #6039aa;
+    background-color: #f7f5fb;
+    color: #6039aa;
+    font-weight: 600;
+    border-radius: 5rem;
+    padding: 1.5rem 9rem;
+    transition: .4s;
+}
+
+.results__btn:hover {
+    filter: brightness(1.3);
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.results__btn:active {
+    filter: brightness(.9);
+    transform: translateY(.1rem);
+    box-shadow: 0 .2rem 1rem 0 rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,75 @@
+.game__tutorial {
+    background-color: #4cb7eb;
+    display: none;
+    justify-items: center;
+    cursor: pointer;
+    grid-row-gap: 3.5rem;
+    padding-top: 6rem;
+    padding-bottom: 3.5rem;
+    position: relative;
+}
+
+.tutorial__pointer {
+    position: absolute;
+    bottom: 14rem;
+    left: 15rem;
+    max-width: 9.6rem;
+    z-index: 1;
+}
+
+.tutorial__target {
+    color: #fff;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    justify-content: space-between;
+    justify-items: center;
+    max-width: 48.5rem;
+    align-items: center;
+    border-radius: 4px;
+    grid-column-gap: 11rem;
+    padding: 1.92rem 2.4rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 7px 35px 0;
+}
+
+.target__text {
+    font-size: 1.84rem;
+}
+
+.target__number {
+    font-size: 5.04rem;
+}
+
+.tutorial__grid {
+    display: grid;
+    width: 48.5rem;
+    height: 20.6rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2.5rem;
+}
+
+.grid__item {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 600;
+    transition: box-shadow .1s;
+}
+
+.grid__item:first-child:hover {
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.6) ;
+}
+
+.grid__item:not(:first-child) {
+    filter: opacity(.5);
+}
+
+.tutorial__message {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+}
+

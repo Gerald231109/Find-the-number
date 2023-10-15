@@ -1,0 +1,70 @@
+@keyframes appearance {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {opacity: 1;
+        transform: translateX(0)}
+}
+/*/ Класс накладывающий анимацию appearance /*/
+.animation--appearance {
+    animation: appearance forwards .4s;
+}
+
+
+@keyframes disappearance {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {opacity: 0;
+        transform: translateX(-150%);
+    }
+}
+/*/ Класс накладывающий анимацию disappearance /*/
+.animation--disappearance {
+    animation: disappearance forwards .4s
+}
+
+
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.infinite__opacity {
+    animation: opacity infinite .4s alternate ease-in;
+}
+
+@keyframes rocking {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(-10deg)
+    }
+}
+
+.infinite__rocking {
+    animation: rocking infinite .3s alternate ease-in-out;
+}
+
+@keyframes decrease {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(.4)
+    }
+}
+
+.infinite__decrease {
+    animation: decrease infinite .4s alternate ease-in;
+}
