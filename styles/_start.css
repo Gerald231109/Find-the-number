@@ -74,6 +74,7 @@
     display: grid;
     grid-template-columns: repeat(6, min-content);
     align-items: center;
+    white-space: nowrap;
 }
 
 .bonus-block {
